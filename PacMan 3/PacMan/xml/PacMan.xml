@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pc:Jeu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pc="http://www.monjeu.com/jeuPacMan" xsi:schemaLocation="http://www.monjeu.com/jeuPacMan ../xsd/PacMan.xsd">
+  <pc:Carte>
+    <pc:Ligne>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</pc:Ligne>
+    <pc:Ligne>0 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 0</pc:Ligne>
+    <pc:Ligne>0 1 1 0 1 1 1 1 0 1 1 1 1 0 1 1 0</pc:Ligne>
+    <pc:Ligne>0 1 1 0 1 1 1 1 0 1 1 1 1 0 1 1 0</pc:Ligne>
+    <pc:Ligne>0 0 0 0 1 1 1 1 1 1 1 1 1 0 0 0 0</pc:Ligne>
+    <pc:Ligne>0 1 1 1 1 1 1 0 0 0 1 1 1 1 1 1 0</pc:Ligne>
+    <pc:Ligne>0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0</pc:Ligne>
+    <pc:Ligne>0 1 1 1 0 0 0 0 0 0 0 0 0 1 1 1 0</pc:Ligne>
+    <pc:Ligne>0 1 1 1 0 1 1 1 0 1 1 1 0 1 1 1 0</pc:Ligne>
+    <pc:Ligne>0 1 1 1 1 1 1 0 0 0 1 1 1 1 1 1 0</pc:Ligne>
+    <pc:Ligne>0 1 1 0 0 0 1 1 1 1 1 0 0 0 1 1 0</pc:Ligne>
+    <pc:Ligne>0 1 1 1 1 0 1 1 1 1 1 0 1 1 1 1 0</pc:Ligne>
+    <pc:Ligne>0 1 0 0 0 0 1 1 1 1 1 0 0 0 0 1 0</pc:Ligne>
+    <pc:Ligne>0 1 1 1 0 1 1 0 0 0 1 1 0 1 1 1 0</pc:Ligne>
+    <pc:Ligne>0 1 1 1 0 1 1 1 1 1 1 1 0 1 1 1 0</pc:Ligne>
+    <pc:Ligne>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</pc:Ligne>
+  </pc:Carte>
+  <pc:Pacman>
+    <pc:PositionX>8</pc:PositionX>
+    <pc:PositionY>11</pc:PositionY>
+    <pc:vitesse>5</pc:vitesse>
+  </pc:Pacman>
+  <pc:Ennemis>
+    <pc:Ennemi>
+      <pc:PositionX>1</pc:PositionX>
+      <pc:PositionY>1</pc:PositionY>
+    </pc:Ennemi>
+    <pc:Ennemi>
+      <pc:PositionX>13</pc:PositionX>
+      <pc:PositionY>11</pc:PositionY>
+    </pc:Ennemi>
+    <pc:Ennemi>
+      <pc:PositionX>13</pc:PositionX>
+      <pc:PositionY>1</pc:PositionY>
+    </pc:Ennemi>
+    <pc:Ennemi>
+      <pc:PositionX>7</pc:PositionX>
+      <pc:PositionY>3</pc:PositionY>
+    </pc:Ennemi>
+  </pc:Ennemis>
+  <pc:etatJeu>Perdu</pc:etatJeu>
+</pc:Jeu>

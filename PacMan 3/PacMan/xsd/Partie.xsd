@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.monjeu.com/partie"
+           xmlns="http://www.monjeu.com/partie"
+           elementFormDefault="qualified">
+
+    <!-- Définition du type pour une partie -->
+    <xs:complexType name="PartieType">
+        <xs:sequence>
+            <xs:element name="NomJoueur" type="xs:string"/>
+            <xs:element name="Date" type="xs:date"/>
+            <xs:element name="Score" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Définition du type pour une liste de parties -->
+    <xs:complexType name="PartiesType">
+        <xs:sequence>
+            <xs:element name="Partie" type="PartieType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Définition de l'élément racine -->
+    <xs:element name="Parties" type="PartiesType"/>
+</xs:schema>

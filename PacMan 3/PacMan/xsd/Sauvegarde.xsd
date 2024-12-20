@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.monjeu.com/jeuPacMan/sauvegarde"
+           xmlns="http://www.monjeu.com/jeuPacMan/sauvegarde"
+           elementFormDefault="qualified">
+
+    <!-- Déclaration des types complexes -->
+    <xs:complexType name="TypeJoueur">
+        <xs:sequence>
+            <xs:element name="Nom" type="xs:string"/>
+            <xs:element name="NbPartie" type="xs:int"/>
+            <xs:element name="Parties" type="TypeParties"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TypeParties">
+        <xs:sequence>
+            <xs:element name="Partie" type="TypePartie" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TypePartie">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:string"/>
+            <xs:element name="Date" type="xs:date"/>
+            <xs:element name="EtatJeu" type="xs:string"/>
+            <xs:element name="Score" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Déclaration des éléments principaux -->
+    <xs:element name="Sauvegarde">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Joueur" type="TypeJoueur" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

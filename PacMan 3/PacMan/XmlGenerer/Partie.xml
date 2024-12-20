@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Parties xmlns="http://www.monjeu.com/partie">
+  <Partie>
+    <NomJoueur>BENDRA</NomJoueur>
+    <Date>2024-12-20</Date>
+    <Score>460</Score>
+  </Partie>
+  <Partie>
+    <NomJoueur>DOUMI</NomJoueur>
+    <Date>2024-12-20</Date>
+    <Score>530</Score>
+  </Partie>
+</Parties>

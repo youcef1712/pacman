@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pc:JeuEtat xmlns:pc="http://www.monjeu.com/jeuPacMan">
+  <pc:etatJeu>Perdu</pc:etatJeu>
+  <pc:score>530</pc:score>
+  <pc:vies>0</pc:vies>
+  <pc:tempsJoue>13.6</pc:tempsJoue>
+  <pc:nomJoueur>DOUMI</pc:nomJoueur>
+  <pc:distanceParcourue>3976.98</pc:distanceParcourue>
+  <pc:optimalDistance>8700</pc:optimalDistance>
+  <pc:optimalTime>35</pc:optimalTime>
+</pc:JeuEtat>

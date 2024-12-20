@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Sauvegarde xmlns="http://www.monjeu.com/jeuPacMan/sauvegarde">
+  <Joueur>
+    <Nom>BENDRA</Nom>
+    <NbPartie>1</NbPartie>
+    <Parties>
+      <Partie>
+        <ID>001</ID>
+        <Date>2024-12-20</Date>
+        <EtatJeu>Perdu</EtatJeu>
+        <Score>460</Score>
+      </Partie>
+    </Parties>
+  </Joueur>
+  <Joueur>
+    <Nom>DOUMI</Nom>
+    <NbPartie>1</NbPartie>
+    <Parties>
+      <Partie>
+        <ID>001</ID>
+        <Date>2024-12-20</Date>
+        <EtatJeu>Perdu</EtatJeu>
+        <Score>530</Score>
+      </Partie>
+    </Parties>
+  </Joueur>
+</Sauvegarde>

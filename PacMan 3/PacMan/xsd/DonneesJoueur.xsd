@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.monjeu.com/jeuPacMan/joueurs"
+           xmlns:pc="http://www.monjeu.com/jeuPacMan/joueurs"
+           elementFormDefault="qualified">
+    <!-- Définition de l'élément racine -->
+    <xs:element name="DonneesJoueur" type="pc:Joueur"/>
+    <xs:complexType name="Joueur">
+        <xs:sequence>
+            <xs:element name="Nom" type="xs:string" />
+            <xs:element name="Prenom" type="xs:string"/>
+            <xs:element name="Age" type="xs:int" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

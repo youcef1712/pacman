@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.monjeu.com/jeuPacMan"
+           xmlns:pc="http://www.monjeu.com/jeuPacMan"
+           elementFormDefault="qualified">
+
+    <xs:element name="JeuEtat" type="pc:JeuEtat"/>
+    <xs:complexType name="JeuEtat">
+        <xs:sequence>
+            <xs:element name="etatJeu" type="pc:EtatJeu"/>
+            <xs:element name="score" type="xs:int"/>
+            <xs:element name="vies" type="xs:int"/>
+            <xs:element name="tempsJoue" type="xs:string"/>
+            <xs:element name="nomJoueur" type="xs:string"/>
+            <xs:element name="distanceParcourue" type="xs:float"/>
+            <xs:element name="optimalDistance" type="xs:float"/>
+            <xs:element name="optimalTime" type="xs:float"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="EtatJeu">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Formulaire"/>
+            <xs:enumeration value="Menu"/>
+            <xs:enumeration value="Jeu"/>
+            <xs:enumeration value="Perdu"/>
+            <xs:enumeration value="Gagne"/>
+            <xs:enumeration value="Quitter"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

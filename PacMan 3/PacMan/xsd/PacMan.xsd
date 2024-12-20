@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.monjeu.com/jeuPacMan"
+           xmlns:pc="http://www.monjeu.com/jeuPacMan"
+           elementFormDefault="qualified">
+
+    <!-- Élément racine Jeu -->
+    <xs:element name="Jeu" type="pc:Jeu"/>
+    <xs:complexType name="Jeu">
+        <xs:sequence>
+            <xs:element name="Carte" type="pc:Carte"/>
+            <xs:element name="Pacman" type="pc:Pacman"/>
+            <xs:element name="Ennemis" type="pc:Ennemis"/>
+            <xs:element name="etatJeu" type="pc:EtatJeu"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Carte">
+        <xs:sequence>
+            <xs:element name="Ligne" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Pacman">
+        <xs:sequence>
+            <xs:element name="PositionX" type="xs:int"/>
+            <xs:element name="PositionY" type="xs:int"/>
+            <xs:element name="vitesse" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Ennemis">
+        <xs:sequence>
+            <xs:element name="Ennemi" type="pc:Ennemi" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Ennemi">
+        <xs:sequence>
+            <xs:element name="PositionX" type="xs:int"/>
+            <xs:element name="PositionY" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="EtatJeu">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Formulaire"/>
+            <xs:enumeration value="Menu"/>
+            <xs:enumeration value="Jeu"/>
+            <xs:enumeration value="Perdu"/>
+            <xs:enumeration value="Gagne"/>
+            <xs:enumeration value="Quitter"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
